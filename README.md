@@ -1,7 +1,7 @@
 ## DevOps
 DevOps Learning Path = Projects
 
-## Infrastructure as Code
+## For the Infrastructure as Code 
 
 ### Dependencies
 ##### 1. AWS account
