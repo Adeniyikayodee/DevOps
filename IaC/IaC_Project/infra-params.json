@@ -21,7 +21,7 @@
 	},
     {
         "ParameterKey": "WebServerImageId",
-        "ParameterValue": "ami-003634241a8fcdec0",
+        "ParameterValue": "ami-005de95e8ff495156",
         "ResolvedValue": "Ubuntu Server 18.04 LTS"
     },
     {
