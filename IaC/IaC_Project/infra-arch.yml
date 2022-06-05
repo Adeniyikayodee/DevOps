@@ -264,11 +264,11 @@ Resources:
               apt-get install apache2 -y
               systemctl start apache2.service
               cd /var/www/html
+
+              aws s3 cp s3://kayode-bucket-mkb/web.zip ./
               
-              aws s3 cp s3://udagram-bucket-1133/index.zip ./
-              
-              unzip -o index.zip
-              rm index.zip
+              unzip -o web.zip
+              rm web.zip
           ImageId: !Ref WebServerImageId
           IamInstanceProfile: !Ref S3GetInstanceProfile
           SecurityGroups:
@@ -430,10 +430,11 @@ Outputs:
         Value: !Ref PrivateSubnet2
         Export:
           Name: !Sub ${EnvironmentName}-PRI2-SN
+
     WebAppTargetGroup:
         Description: A reference to the load balancer
         Value: !Ref WebAppTargetGroup
         Export:
-          Name: !Sub $${EnvironmentName}-LOAD-BLNCER
+          Name: !Sub ${EnvironmentName}-LOAD-BLNCER
           
     

@@ -26,6 +26,6 @@
     },
     {
         "ParameterKey": "WebServerInstanceType",
-        "ParameterValue": "t3.medium"
+        "ParameterValue": "t2.micro"
     }
 ]
